@@ -20,13 +20,13 @@ a{
 }
 
 header{
-    background-color: #FED100 ;
+    background-color: #e9efff ;
     text-align: center;
     height: 44px;
 }
 /*--------nav---------*/
 nav{
-    background-color: black;
+    background-color: #d80018;
 }
 nav ul{
     display: flex;
@@ -112,40 +112,53 @@ nav ul li:nth-child(9):hover a{
     color: #FFF200;
 }
 /*----------------menu-bar--------------*/
-.menu-bar{
-    background-color: rgb(254,209,0);
-    
+
+.menu-bar {
+    background-color: #e9efff;
 }
-.menu-bar ul{
+
+.menu-bar ul {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center; /* Center the menu items */
     text-align: center;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
-.menu-bar ul li a{
-    color:black;
+
+.menu-bar ul li {
+    list-style-type: none; /* Remove bullet points */
+}
+
+.menu-bar ul li a {
+    color: black;
     font-size: 14px;
 }
-.menu-bar ul li a i{
+
+.menu-bar ul li a i {
     margin-right: 6px;
     font-size: 15px;
 }
-.menu-bar-content > ul > li{
+
+.menu-bar-content > ul > li {
     padding: 12px 11px;
     transition: all 0.3s ease;
 }
-.menu-bar ul li:hover{
+
+.menu-bar ul li:hover {
     background-color: white;
 }
-.menu-bar-content > ul > li:nth-child(9){
+
+.menu-bar-content > ul > li:nth-child(9) {
     position: relative;
 }
-.menu-bar-content > ul > li:nth-child(9):before{
+
+.menu-bar-content > ul > li:nth-child(9):before {
     position: absolute;
     content: "Giảm 5%";
     display: block;
     height: 12px;
     width: 45px;
-    background-color: rgb(245,18,18);
+    background-color: rgb(245, 18, 18);
     border-radius: 5px;
     right: -24px;
     top: 0.5px;
@@ -153,7 +166,8 @@ nav ul li:nth-child(9):hover a{
     padding-left: 3px;
     color: #fff;
 }
-.menu-bar-content > ul > li:nth-child(9)::after{
+
+.menu-bar-content > ul > li:nth-child(9)::after {
     position: absolute;
     content: "";
     background-color: #F51212;
